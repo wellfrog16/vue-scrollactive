@@ -202,7 +202,7 @@
 
       if (this.currentItem) this.currentItem.classList.add(this.activeClass);
 
-      this.scrollToHashElement();
+      if (this.modifyUrl) this.scrollToHashElement();
       this.scrollContainer.addEventListener('scroll', this.onScroll);
     },
 
